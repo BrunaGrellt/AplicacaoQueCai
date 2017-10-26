@@ -22,6 +22,10 @@ app.get('/', (req, res) => {
     res.send('funcionou')
 })
 
+app.get('/render', (req, res) => {
+    res.render('bug.aspx')
+})
+
 app.listen(3000, (req, res) => {
     console.log("running at 3000")
 })
