@@ -19,7 +19,7 @@ app.get('/bug', (req, res) => {
 })
 
 
-const server = app.listen(process.env.PORT)
+const server = app.listen(3000 ||process.env.PORT)
 
 app.get('/', (req, res) => {
     res.send('funcionou')
