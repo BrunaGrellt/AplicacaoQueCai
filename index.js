@@ -18,14 +18,17 @@ app.get('/bug', (req, res) => {
 
 })
 
+
+const server = app.listen(3000)
+
 app.get('/', (req, res) => {
     res.send('funcionou')
 })
 
 app.get('/render', (req, res) => {
-    res.render('bug.aspx')
+       
+    process.exit(1)
+
 })
 
-app.listen(3000, (req, res) => {
-    console.log("running at 3000")
-})
+
