@@ -2,8 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/bug', (req, res) => {
-
-
+    console.log("pull request da bruna")
     let i;
     let fib = []; // Initialize array!
 
